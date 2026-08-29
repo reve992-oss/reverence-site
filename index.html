@@ -8,7 +8,7 @@
   :root{
     --bg: #0b0b0a;
     --bg-raised: #151412;
-    --ink: #f2efe8;
+    --ink: #ffffff;
     --muted: #8f8c83;
     --muted-dim: #64625b;
     --line: #2c2a26;
@@ -217,6 +217,15 @@
     color: var(--muted-dim);
     letter-spacing: 0.03em;
   }
+  .admin-link{
+    color: var(--muted-dim);
+    text-decoration: none;
+    opacity: 0.32;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  .admin-link:hover{ opacity: 1; }
+  .admin-link:focus-visible{ outline: 1px solid var(--muted); opacity: 1; }
 
   @media (max-height: 700px){
     .hero .epigraph{ display:none; }
@@ -275,6 +284,7 @@
     <div class="footer-row">
       <span id="footer-count"></span>
       <span>Reverence · 2026</span>
+      <a href="admin.html" class="admin-link" aria-label="Admin">·</a>
     </div>
   </footer>
 </main>
